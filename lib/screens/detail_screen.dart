@@ -11,14 +11,17 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Center(child: Text(post.title))),
-      body: ListView(children: [
-        const SizedBox(height: 10),
-        Text(post.title, textAlign: TextAlign.center),
-        const SizedBox(height: 10),
-        Text('Плюсов: ${post.ups}', textAlign: TextAlign.center),
-        const SizedBox(height: 10),
-        Text(_parseHtmlString(post.text)),
-      ]),
+      body: Container(
+        margin: const EdgeInsets.all(10),
+        child: ListView(children: [
+          const SizedBox(height: 10),
+          Text(post.title, textAlign: TextAlign.center),
+          const SizedBox(height: 10),
+          Text('Плюсов: ${post.ups}', textAlign: TextAlign.center),
+          const SizedBox(height: 10),
+          Text(_parseHtmlString(post.text)),
+        ]),
+      ),
     );
   }
 
