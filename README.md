@@ -1,3 +1,3 @@
 # flutterdev_view
 
-- [Перейти на Web версию (пока не работает, в процессе)](https://google.com/)
+- [Перейти на Web версию](https://a1terrans.github.io/flutterdev_view/)
